@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <script type="text/javascript">
+
+    // Pedir introducir un mes y devolver el número de días que tiene. Si se introduce febrero, pedir el
+    // año y comprobar si es bisiesto
+
+    let mes = prompt("Introducir por favor un mes, todo en minúsculas. ");
+  
+    let numeroDeDias = 0;
+
+    if (mes == "enero" || mes == "marzo" || mes == "mayo" || mes == "julio" || mes == "agosto" || mes == "octubre" || mes == "diciembre") {
+      alert("numeroDeDias=31")
+    }
+
+
+
+    else if(mes == "febrero"){
+
+                        let anio = prompt("Introduce el año que quieres consultar")
+
+                          if (anio%4==0 && !anio%100 && anio%400){
+
+                            alert("Febrero de este año tiene 28 días");
+                          }
+
+                          else {
+                              alert("Febrero de este año tiene 29 días");
+                            }
+
+                          }
+                      
+  
+
+
+
+    else {
+      alert("numeroDeDias=30")
+    }
+
+
+
+  </script>
+</head>
+
+</html>
